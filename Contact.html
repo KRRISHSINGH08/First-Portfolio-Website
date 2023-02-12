@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body{
+            background-color: #EAF6F6;
+        }
+        input {
+            margin-bottom: 15px;
+        }
+        textarea{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Contact Details</h3>
+    <p>Phone: 8439233994</p>
+    <p>Email: singhkrrish85@gmail.com</p>
+<hr>
+    <form action="mailto:singhkrrish85@gmail.com" method="post" enctype="text/plain">
+        
+    <!--action - Backend script ready to process your passed data i.e what should happen when user click submit.
+        Method - Method to be used to upload data.-->
+    <!--<label> - defines a label for many form elements. useful for screen-reader users,
+        screen-reader will read out loud the label when the user focus on the
+        input element. also help users who have difficulty clicking on
+        very small regions -->
+    <!--Note: for attribute of the <label> tag should be equal to the id attribute
+        of the <input> element to bind them together.-->
+    <!-- attributes: value - to provide initial value
+        name - give a name to the control which is sent to the server to be recognized and get the value.
+        Example: See the response after clicking submit button -->
+
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name: " value=""><br>
+        <label>Your Email:</label><br>
+        <input type="email" name="Your Email: " value=""><br>
+        <label>Your Message:</label><br>
+        <textarea name="your message: " id="" cols="30" rows="10">Enter your message here...</textarea><br>
+        <input type="submit" value="submit"> <br>
+    </form>
+</body>
+</html>

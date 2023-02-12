@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    text-align: center;
+    /* text-align:center inside the container or parent ele will center everything that doesn't have a width set
+    and if it is a block element with width set then will center it using margin auto */
+    font-family: 'Merriweather', serif;
+    color:#40514E;
+}
+
+h1 {
+    font-size: 5.625rem; /* dynamic size 16px = 100% = 1em... ex- 562.5% = 5.625em = 90px*/
+    /* use rem instead of px,em,% because doesn't affect by upstream size changes (parent font size), most adaptable, reliable and easy to debug */
+    margin: 20px auto 0 auto;
+    /* width: 10%; */
+    /* margin: auto; or */ 
+    /* margin: 0 auto;  */
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* 40px */ 
+    color: #66BFBF;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+hr{
+    border: 6px dotted #EAF6F6;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+p{
+    line-height: 2;
+}
+
+h2.programmer{
+    margin-top: 20px;
+}
+.skill-row{
+    text-align: left;
+    margin: 100px auto 100px;
+    width: 50%;
+
+}
+.skill-1{
+    width: 25%; /* 25% of width of parent(skill-row) */
+    /* we can use float property to wrap a text around the image */
+    /* Use float only for wrapping text  **dont use it for positioning(use relative,absolute,margin,padding for that)**  */
+    float: left;
+    /* margin: 0 30px 0 0; */
+    margin-right: 30px;
+    
+}
+.skill-2{
+    width: 25%; 
+    float: right;
+    margin-left: 30px;
+}
+/* .development{ */
+    /* clear right side prevent from wrapping anything on the right */
+    /* clear: right;  */
+/* }  */
+
+.top-container {
+    background-color: #EAF6F6;
+    /* relative positioning - adding a margin relative to where the element should have been i.e normal flow of element or static positioning */
+    /* absolute positioning - adding a margin relative to its parent(mostly body) which has position: relative and element get out of normal flow means any other element can take its place  */
+    /* fixed positioning - position of element is fixed even when user scroll the page. Ex- use to design a fixed navbar or sidebar */
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+    /* background-color: red;
+    width: 200px;
+    height: 200px; */
+    margin: 100px 0 50px;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 40px 0 20px;
+    /* width: 200px;  */
+
+}
+.footer-link{
+    margin: 10px 20px;
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color: #EAF6F6;
+}
+
+.contact-message {
+    margin: 40px auto 60px;
+} 
+ 
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+/* Button made by me */
+/* .contact{
+    width: 10%; 
+    padding: 5px; 
+    border-radius: 4px;
+    margin : 0 auto;
+    text-align: center;
+    background-color: #66BFBF;
+    color: white;
+} */
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #32c8aa, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+.intro{
+    width:50%;
+    margin:auto;
+}
+
+.top-cloud {
+    /* taken out of the flow and relative to top-container  */
+    position: absolute;
+    right: 200px;
+    top: 40px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+}
